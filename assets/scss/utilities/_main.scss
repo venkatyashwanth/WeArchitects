@@ -2,6 +2,58 @@
     padding: 8px 16px !important;
 }
 
+.m-black {
+    color: #fff !important;
+    background-color: #000 !important;
+}
+
+.m-text-light-grey {
+    color: #f1f1f1 !important;
+}
+
+.m-opacity-min {
+    opacity: 0.75;
+}
+
+.text-xxlarge {
+    font-size: 36px!important;
+    white-space: nowrap;
+    span:not(:last-child){
+        margin-right: 10px;
+    }
+}
+
+.relative-pos {
+    position: relative;
+}
+
+
+.m-display-middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+// w3-hide-small {
+
+// }
+
+.maxim-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.singleScreen {
+    background-image: url("../images/hero_image.jpg");
+    background-size: cover;
+    background-position: bottom center;
+    height: 100vh;
+}
+
+
 // hide on small screens
 @include for-size(phone-only) {
     .hide-small {

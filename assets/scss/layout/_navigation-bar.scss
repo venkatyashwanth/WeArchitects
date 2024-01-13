@@ -9,6 +9,11 @@
         box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
     }
 
+    .nav-bar-white {
+        color: #000!important;
+        background-color: #fff!important;
+    }
+    
     .nav-bar {
 
         @include floatElements;
@@ -28,7 +33,14 @@
             background-color: inherit;
             text-align: center;
             white-space: nowrap;
+            transition: all 0.3s;
+
+            &:hover {
+                color: #000 !important;
+                background-color: #ccc !important;
+            }
         }
+
 
         // Hamburger-button
         .hamburger {
@@ -135,3 +147,5 @@
         }
     }
 }
+
+.w3-button:hover {}
