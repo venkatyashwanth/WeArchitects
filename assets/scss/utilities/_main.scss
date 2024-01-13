@@ -1,0 +1,17 @@
+.m-padding {
+    padding: 8px 16px !important;
+}
+
+// hide on small screens
+@include for-size(phone-only) {
+    .hide-small {
+        display: none !important;
+    }
+}
+
+// hide on desktop screens
+@include for-size(tablet-portrait-up) {
+    .hide-large {
+        display: none !important;
+    }
+}

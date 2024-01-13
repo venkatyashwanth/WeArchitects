@@ -1,0 +1,17 @@
+// Floating elements
+@mixin floatElements {
+    &::before,
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .float-left {
+        float: left;
+    }
+
+    .float-right {
+        float: right;
+    }
+}
